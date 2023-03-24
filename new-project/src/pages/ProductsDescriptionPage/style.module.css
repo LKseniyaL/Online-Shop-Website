@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 100px;
+    max-width: 800px;
+    margin: 100px auto;
+    
+}
+.container img{
+    object-fit: contain;
+    width: 100%;
+}
+.info{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 30px;
+}
+.sale_block button{
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: #34495E;
+    cursor: pointer;
+}
+.sale_block p{
+    font-size: 30px;
+}
+@media(max-width: 580px){
+    .container{
+        grid-template-columns: auto;
+        margin: 40px;
+    }
+    .container img{
+        height: 200px;
+    }
+}
